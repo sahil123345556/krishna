@@ -3,13 +3,10 @@ const app = express();
 
 // Define a route for the root path '/'
 app.get('/', (req, res) => {
-  res.send('Hello, World!');
+  res.send('Sahil');  // Sends the string "Sahil" as the response
 });
 
-// Use the environment's port or default to 3000 if no port is set
-const port = process.env.PORT || 3000;
-
-// Start the server
-app.listen(port, () => {
-  console.log(`Server is running at http://localhost:${port}`);
+// Start the server without specifying the port
+app.listen(() => {
+  console.log('Server is running and will use the default port (3000)');
 });
