@@ -14,7 +14,9 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     }
 
     // Get the backend URL from the environment variable
-    const backendUrl ='http://localhost:3000'; // Default to localhost if no env variable is set
+    // const backendUrl ='http://localhost:3000';
+    // Default to localhost if no env variable is set
+     const backendUrl ='https://krishna-fpny2lu77-sahilbichwalias-projects.vercel.app:3000';
 
     // Sending the POST request using fetch
     fetch(`${backendUrl}/login`, {
